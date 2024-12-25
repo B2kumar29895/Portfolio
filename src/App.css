@@ -1,0 +1,119 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-main-container {
+  min-height: 100vh;
+  font-size: calc(7px + 2vmin);
+  color: white;
+  position: relative;
+  /* top: 0;
+  bottom: 0;*/
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  background-color: #101010;
+  min-width: 370px;
+  height: 100vh;
+  z-index: 99;
+  border-radius: 30px 0 0 30px;
+}
+
+.main-layout-contaier {
+  height: 100vh;
+  position: relative;
+  top: 0px;
+  left: 340px;
+  border-radius: 30px 0 0 30px;
+  background-color: #131f28;
+  /* #131f28 #282c34 */
+  z-index: 100;
+  width: calc(100% - 340px);
+  outline: solid 2px white;
+  overflow: auto;
+}
+
+.sub-main-layout {
+  padding: 0 40px 40px 40px;
+  overflow-y: auto;
+  height: calc(100% - 60px);
+  width: calc(100% - 80px);
+}
+
+.sidebar-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-sub-menu {
+  padding: 10px 0;
+  cursor: pointer;
+  margin-top: 6px;
+  width: 100%;
+  text-align: center;
+  color: #A49DC8;
+}
+
+.sidebar-sub-menu:hover {
+  color: #F8f8f8;
+  background: transparent linear-gradient(131deg, #1D0B77 0%, #6A5FA2 100%) 0% 0% no-repeat padding-box;
+}
+
+.sidebar-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-footer img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.download-cv-btn {
+  width: 180px;
+  height: 45px;
+  padding: 10px 30px;
+  background: transparent linear-gradient(131deg, #1D0B77 0%, #6A5FA2 100%) 0% 0% no-repeat padding-box;
+  /*#00a4f5;*/
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 16px;
+  color: #F8f8f8;
+}
+
+.download-cv-btn:hover {
+  background: transparent linear-gradient(131deg, #FFA23A 0%, #FFD4A4 100%) 0% 0% no-repeat padding-box;
+}
