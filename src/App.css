@@ -85,6 +85,11 @@
   background: transparent linear-gradient(131deg, #1D0B77 0%, #6A5FA2 100%) 0% 0% no-repeat padding-box;
 }
 
+.active {
+  color: #F8f8f8;
+  background: transparent linear-gradient(131deg, #1D0B77 0%, #6A5FA2 100%) 0% 0% no-repeat padding-box;
+}
+
 .sidebar-footer {
   margin-top: 30px;
   display: flex;
@@ -126,7 +131,7 @@
   translate: -50% -50%;
   height: 50px;
   border: 6px solid aqua;
-  box-shadow: 0 0 4px aqua, 0 0  4px aqua inset;
+  box-shadow: 0 0 4px aqua, 0 0 4px aqua inset;
   animation: spin 2s ease-in-out infinite;
   z-index: 9999;
 }

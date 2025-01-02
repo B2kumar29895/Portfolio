@@ -6,11 +6,13 @@ import linkedIn from '../assest/socialMedia/linkedin.png';
 import twitter from '../assest/socialMedia/twitter.png';
 import photo from '../assest/document/photo.jpg';
 import Resume from '../assest/document/Bittu_Kumar_Resume.pdf';
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 
 
 const SideBar = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+
     return (
         <>
 
@@ -51,7 +53,9 @@ const SideBar = () => {
                 <Box className={"sidebar-menu"}>
                     {
                         MenuList.map((item, index) => (
-                            <Box className={"sidebar-sub-menu"} key={index}
+                            <Box
+                                className={location.pathname == item.navLink ? "sidebar-sub-menu active" : "sidebar-sub-menu"}
+                                key={index}
                                 onClick={() => navigate(item.navLink)}
                             >
                                 <Typography
@@ -75,13 +79,13 @@ const SideBar = () => {
                         />
                         <img src={twitter} alt="twitter" />
                     </div>
-                    
+
                     <a href={Resume} download>
                         <button className="download-cv-btn">
                             Download CV
                         </button>
                     </a>
-                    
+
                 </Box>
             </Box>
         </>
