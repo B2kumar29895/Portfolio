@@ -4,7 +4,7 @@ const MenuList = [
     {
         id: 1,
         name: "Home",
-        navLink: "/home"
+        navLink: "/"
     },
     {
         id: 2,
