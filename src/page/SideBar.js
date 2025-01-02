@@ -25,7 +25,7 @@ const SideBar = () => {
 
                     }}
                 >
-                    <Avatar src={photo} alt="profile-Image"
+                    <Avatar src={photo} alt="profile-Image" draggable={false}
                         sx={{
                             width: 140,
                             height: 140

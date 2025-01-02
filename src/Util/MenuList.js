@@ -8,7 +8,7 @@ const MenuList = [
     },
     {
         id: 2,
-        name: "About",
+        name: "About Me",
         navLink: "/about"
     },
     {

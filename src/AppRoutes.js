@@ -9,11 +9,11 @@ import Resume from "./page/Resume";
 import { Route, Routes } from "react-router";
 
 const AppRoutes = () => {
-    alert("main")
+
     return (
         <Routes>
             <Route element={<MainLayout />}>
-                <Route path="/home" element={<Home/>} />
+                <Route path="/" element={<Home/>} />
                 <Route path="/blogs" element={<Blogs/>} />
                 <Route path="/project" element={<Project />} />
                 <Route path="/skill/education" element={<Resume/>} />
